@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Soliton_CVS_V1]">
+  <listeners>
+    <listener class-name="com.solitoncvs.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="CVSWeb test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.solitoncvs.testCases.TC_CVS_Createbroadcast_3">
+        <methods>
+          <include name="createBroadcast"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.solitoncvs.testCases.TC_CVS_Createbroadcast_3 -->
+    </classes>
+  </test> <!-- CVSWeb test(failed) -->
+</suite> <!-- Failed suite [Soliton_CVS_V1] -->
