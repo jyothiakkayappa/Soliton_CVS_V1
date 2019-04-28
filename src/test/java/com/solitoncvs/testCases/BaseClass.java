@@ -28,6 +28,7 @@ public class BaseClass {
 	public String email= readconfig.getEmail();
 	public String password=readconfig.getPassword();
 	public String otp=readconfig.getOTP();
+	public String url=readconfig.getLiveurl();
 	public static WebDriver driver;
 	
 	public static Logger logger;
@@ -58,7 +59,7 @@ public class BaseClass {
 		logger.info("Url is opened");
 	}
 	
-	@AfterClass
+	//@AfterClass
 	public void tearDown()
 	{
 		driver.quit();

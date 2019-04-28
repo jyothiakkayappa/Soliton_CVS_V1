@@ -14,7 +14,6 @@ public class Loginpage {
 	{
 		ldriver=rdriver;
 		PageFactory.initElements(rdriver, this);
-
 	}
 	
 	@FindBy(name="email")
@@ -32,6 +31,15 @@ public class Loginpage {
 	@FindBy(xpath="//button[text()='Sign In']")
 	@CacheLookup
 	WebElement txtSignIn;
+	
+//	@FindBy(xpath="//button[@class='h-dropbtn']")
+//	@CacheLookup
+//	WebElement mouseOver;
+//	
+//	@FindBy(xpath="//a[text()='Logout']")
+//	@CacheLookup
+//	WebElement signOut;
+//	
 	
 	
 	//Action Methods for the above
@@ -55,6 +63,13 @@ public class Loginpage {
 		txtSignIn.click();
 	}
 	
+//	public void mouseOver()
+//	{
+//		mouseOver.click();
+//	}
+//	public void signOut()
+//	{
+//		signOut.click();
+//	}
 	
-
 }

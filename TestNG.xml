@@ -9,8 +9,9 @@
 	<test name="CVSWeb test" >
 		<parameter name="browser" value="chrome" />
 			<classes>
-				<class name="com.solitoncvs.testCases.TC_CVS_Createbroadcast_3" />
+			<class name="com.solitoncvs.testCases.TC_CVS_LOGIN_1" /> 
+			<class name="com.solitoncvs.testCases.TC_CVS_Createbroadcast_3" />
+			<class name="com.solitoncvs.testCases.TC_CVS_AddLiveInput_4" />
 			</classes>
 	</test>
-
 </suite>

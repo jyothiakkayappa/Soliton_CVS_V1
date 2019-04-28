@@ -1,6 +1,10 @@
 package com.solitoncvs.testCases;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -53,9 +57,16 @@ public class TC_CVS_LOGIN_1 extends BaseClass
 			captureScreen(driver,"loginTest");
 			Assert.assertTrue(false);
 			logger.info("Login test Fail");
-		}
+		}	
 		
+		Thread.sleep(3000);
+		WebElement P1 = driver.findElement(By.xpath("//button[@class='h-dropbtn']"));
+		WebElement P2 = driver.findElement(By.xpath("//a[text()='Logout']"));
+		Actions act = new Actions(driver);
 		
+		act.moveToElement(P1).moveToElement(P2).click().build().perform();
+//		act.moveToElement(P1).build().perform();
+//		act.moveToElement(P2).click().build().perform();
 		
 	}
 

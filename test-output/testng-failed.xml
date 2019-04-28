@@ -7,10 +7,21 @@
   <test thread-count="5" name="CVSWeb test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="com.solitoncvs.testCases.TC_CVS_LOGIN_1">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.solitoncvs.testCases.TC_CVS_LOGIN_1 -->
+      <class name="com.solitoncvs.testCases.TC_CVS_AddLiveInput_4">
+        <methods>
+          <include name="addliveInput"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.solitoncvs.testCases.TC_CVS_AddLiveInput_4 -->
       <class name="com.solitoncvs.testCases.TC_CVS_Createbroadcast_3">
         <methods>
           <include name="createBroadcast"/>
-          <include name="tearDown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.solitoncvs.testCases.TC_CVS_Createbroadcast_3 -->

@@ -64,5 +64,10 @@ public class ReadConfig {
 		String firefoxpath = pro.getProperty("firefoxpath");
 		return firefoxpath;
 	}
+	public String getLiveurl()
+	{
+		String getLiveurl=pro.getProperty("url");
+		return getLiveurl;
+	}
 }
 

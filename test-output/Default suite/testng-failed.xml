@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.solitoncvs.testCases.TC_CVS_Createbroadcast_3">
+      <class name="com.solitoncvs.testCases.TC_CVS_AddLiveInput_4">
         <methods>
-          <include name="createBroadcast"/>
-          <include name="tearDown"/>
+          <include name="addliveInput"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.solitoncvs.testCases.TC_CVS_Createbroadcast_3 -->
+      </class> <!-- com.solitoncvs.testCases.TC_CVS_AddLiveInput_4 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
