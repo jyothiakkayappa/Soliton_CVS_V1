@@ -8,13 +8,13 @@ import org.testng.annotations.Test;
 
 import com.solitoncvs.pageObjects.AddLiveBroadcast;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
+import com.solitoncvs.pageObjects.DeleteAddedInputControl;
 import com.solitoncvs.pageObjects.Loginpage;
-import com.solitoncvs.pageObjects.PreviewInputControl;
 
-public class TC_CVS_PreviewInputControl_6 extends BaseClass
+public class TC_CVS_DeleteAddedInputControl_7 extends BaseClass
 {
 	@Test
-	public void previewInputControl() throws InterruptedException, IOException
+	public void deleteAddedInputControl() throws InterruptedException, IOException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(3000);
@@ -34,7 +34,7 @@ public class TC_CVS_PreviewInputControl_6 extends BaseClass
 		boolean res=driver.getPageSource().contains("Start a new broadcast");
 		if(res)
 		{
-			captureScreen(driver,"TC_CVS_AddLiveInput_4");
+			captureScreen(driver,"DeleteAddedInputControl_7");
 			createnewbroadcast.broadcasteName("ABC");
 			logger.info("Broadcast name  Provided");
 			createnewbroadcast.startBroadcast();
@@ -67,14 +67,10 @@ public class TC_CVS_PreviewInputControl_6 extends BaseClass
 		addLiveBroadcast.addButton();
 		
 		Thread.sleep(3000);
-		captureScreen(driver,"TC_CVS_PreviewInputControl_6");
-		PreviewInputControl previewInputControl = new PreviewInputControl(driver);
-		previewInputControl.previewInputControl();
-		logger.info("Input Clicked ");
-		
+		DeleteAddedInputControl deleteAddedInputControl = new DeleteAddedInputControl(driver);
+		deleteAddedInputControl.deleteAddedInputControl();
 		
 	}
-	
 	
 
 }

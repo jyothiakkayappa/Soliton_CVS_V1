@@ -6,22 +6,23 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PreviewInputControl {
+public class DeleteAddedInputControl 
+{
 	WebDriver ldriver;
-	
-	public PreviewInputControl(WebDriver rdriver)
+	public DeleteAddedInputControl(WebDriver rdriver)
 	{
 		ldriver=rdriver;
 		PageFactory.initElements(rdriver, this);
 	}
 	
-	@FindBy(xpath="//body/div[@id='layoutroot']/div[@class='flexcol']/div[@class='stream-panel']/div[@class='inputs']/div[@class='flexcol']/div[@class='live-panel']/div[1]/div[1]")
+	@FindBy(xpath="//img[@src='/img/l_del.png']")
 	@CacheLookup
-	WebElement previewinput;
+	WebElement deleteInputbtn;
 	
-	public void previewInputControl()
+	public void deleteAddedInputControl()
 	{
-		previewinput.click();
+		deleteInputbtn.click();	
 	}
+	
 
 }

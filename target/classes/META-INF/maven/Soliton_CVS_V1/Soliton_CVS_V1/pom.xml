@@ -24,6 +24,7 @@
 						<configuration>
 							<source>1.8</source>
 							<traget>1.8</traget>
+							
 							<encoding>UTF-8</encoding>
     						<compilerArgument>-Werror</compilerArgument>							
 						</configuration>

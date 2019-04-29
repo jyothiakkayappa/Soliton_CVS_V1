@@ -36,5 +36,11 @@ public class GoLiveWithoutAddingInputControl {
 		Playbtn.click();
 		
 	}
+	
+	public void addLivewithoutPlaybtn()
+	{
+		addLive.click();
+		
+	}
 
 }

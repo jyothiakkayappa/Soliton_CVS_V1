@@ -8,26 +8,28 @@ import org.testng.annotations.Test;
 
 import com.solitoncvs.pageObjects.AddLiveBroadcast;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
+import com.solitoncvs.pageObjects.GoLiveWithoutAddingInputControl;
 import com.solitoncvs.pageObjects.Loginpage;
 import com.solitoncvs.pageObjects.PreviewInputControl;
+import com.solitoncvs.pageObjects.SwitchEffects;
 
-public class TC_CVS_PreviewInputControl_6 extends BaseClass
+public class TC_CVS_SwitchEffect_8 extends BaseClass
 {
 	@Test
-	public void previewInputControl() throws InterruptedException, IOException
+	public void SwitchEffect() throws InterruptedException, IOException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(3000);
-		Loginpage lp = new Loginpage(driver);
+		Loginpage lp =new Loginpage(driver);
 		lp.setEmail(email);
-		logger.info("Email Passed");
+		logger.info("Email Provided");
 		lp.setPassword(password);
-		logger.info("password entered");
+		logger.info("password Provided");
 		lp.setOTP(otp);
-		logger.info("otp provided");
+		logger.info("OTP Provided");
 		lp.clickSignIn();
 		
-        Thread.sleep(3000);
+		Thread.sleep(3000);
 		
 		CreateNewBroadcast createnewbroadcast = new CreateNewBroadcast(driver);
 		Thread.sleep(3000);
@@ -57,6 +59,8 @@ public class TC_CVS_PreviewInputControl_6 extends BaseClass
 			String t=driver.switchTo().window(i).getTitle();
 			System.out.println(t);
 		}
+		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
+		goLiveWInputCtl.addLivewithoutPlaybtn();
 		Thread.sleep(3000);
 		
 		AddLiveBroadcast addLiveBroadcast = new AddLiveBroadcast(driver);
@@ -67,14 +71,14 @@ public class TC_CVS_PreviewInputControl_6 extends BaseClass
 		addLiveBroadcast.addButton();
 		
 		Thread.sleep(3000);
-		captureScreen(driver,"TC_CVS_PreviewInputControl_6");
 		PreviewInputControl previewInputControl = new PreviewInputControl(driver);
 		previewInputControl.previewInputControl();
-		logger.info("Input Clicked ");
+		
+		Thread.sleep(3000);
+		SwitchEffects switchEffects = new SwitchEffects(driver);
+		switchEffects.switchBtn();
 		
 		
 	}
-	
-	
 
 }
