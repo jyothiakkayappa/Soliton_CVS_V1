@@ -27,7 +27,7 @@ public class SwitchEffects
 	@CacheLookup
 	WebElement CurtainBtn;
 	
-	@FindBy(xpath="//button[@class='btn-white']")
+	@FindBy(xpath="//body/div[@id='layoutroot']/div[@class='flexcol']/div[@class='stream-panel']/div[@class='inputs']/div[@class='flexcol']/div[@id='output-panel']/div[@class='flexrow']/div[@class='fx-panel']/button[2]")
 	@CacheLookup
 	WebElement EndStreamBtn;
 	

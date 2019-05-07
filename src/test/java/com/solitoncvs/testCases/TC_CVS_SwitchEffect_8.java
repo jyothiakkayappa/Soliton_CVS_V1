@@ -78,6 +78,9 @@ public class TC_CVS_SwitchEffect_8 extends BaseClass
 		SwitchEffects switchEffects = new SwitchEffects(driver);
 		switchEffects.switchBtn();
 		
+		Thread.sleep(3000);
+		switchEffects.endStream();
+		
 		
 	}
 

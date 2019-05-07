@@ -78,8 +78,8 @@ public class TC_CVS_CurtainEffect_10 extends BaseClass
 		SwitchEffects switchEffects = new SwitchEffects(driver);
 		switchEffects.curtainBtn();
 		
-//		Thread.sleep(3000);
-//		switchEffects.endStream();
+		Thread.sleep(3000);
+		switchEffects.endStream();
 		
 		
 	}

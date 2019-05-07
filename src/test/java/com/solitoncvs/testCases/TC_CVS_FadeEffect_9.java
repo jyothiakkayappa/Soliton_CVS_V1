@@ -78,6 +78,9 @@ public class TC_CVS_FadeEffect_9 extends BaseClass
 		SwitchEffects switchEffects = new SwitchEffects(driver);
 		switchEffects.fadeBtn();
 		
+		Thread.sleep(3000);
+		switchEffects.endStream();
+		
 		
 	}
 

@@ -29,6 +29,10 @@ public class GoLiveWithoutAddingInputControl {
 	@CacheLookup
 	WebElement Pausebtn;
 	
+	@FindBy(xpath="//body/div[@id='layoutroot']/div[@class='flexcol']/div[@class='stream-panel']/div[@class='inputs']/div[@class='flexcol']/div[@id='output-panel']/div[@class='flexrow']/div[@class='fx-panel']/button[2]/img[1]")
+	@CacheLookup
+	WebElement endStream;
+	
 	
 	public void addLive()
 	{
@@ -40,6 +44,12 @@ public class GoLiveWithoutAddingInputControl {
 	public void addLivewithoutPlaybtn()
 	{
 		addLive.click();
+		
+	}
+	
+	public void endStream()
+	{
+		endStream.click();
 		
 	}
 

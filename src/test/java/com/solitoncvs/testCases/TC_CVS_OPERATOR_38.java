@@ -6,18 +6,19 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
+import com.solitoncvs.pageObjects.AudioMixInputControl;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
 import com.solitoncvs.pageObjects.GoLiveWithoutAddingInputControl;
 import com.solitoncvs.pageObjects.Loginpage;
 
-public class TC_CVS_AddLiveWithoutInput_5 extends BaseClass
+public class TC_CVS_OPERATOR_38 extends BaseClass
 {
 	@Test
-	public void addLiveWithoutInputControl() throws InterruptedException, IOException
+	public void playAudioMix() throws InterruptedException, IOException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(3000);
-		Loginpage lp = new Loginpage(driver);
+		Loginpage lp =new Loginpage(driver);
 		lp.setEmail(email);
 		logger.info("Email Provided");
 		lp.setPassword(password);
@@ -55,11 +56,26 @@ public class TC_CVS_AddLiveWithoutInput_5 extends BaseClass
 			String t=driver.switchTo().window(i).getTitle();
 			System.out.println(t);
 		}
+		driver.manage().window().maximize();
 		Thread.sleep(3000);
 		
-		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
-		goLiveWInputCtl.addLive();
+		AudioMixInputControl audioMixInputControl=new AudioMixInputControl(driver);
+		audioMixInputControl.clickAudioMixInput();
+		
+		GoLiveWithoutAddingInputControl goLiveWithoutAddingInputControl=new GoLiveWithoutAddingInputControl(driver);
+		boolean res2=driver.getPageSource().contains("Go Live");
+		if(res2)
+		{
+			Thread.sleep(3000);
+			goLiveWithoutAddingInputControl.addLivewithoutPlaybtn();
+			audioMixInputControl.clickAudioMixPlayBtn();
+		}
+		else
+		{
+			audioMixInputControl.clickAudioMixPlayBtn();
+			logger.info("Testcase pass");
+		}
+
 	}
-	
 
 }

@@ -12,8 +12,28 @@
 			<!--  <class name="com.solitoncvs.testCases.TC_CVS_LOGIN_1" /> 
 			<class name="com.solitoncvs.testCases.TC_CVS_Createbroadcast_3" />
 			<class name="com.solitoncvs.testCases.TC_CVS_AddLiveInput_4" />
-			<class name="com.solitoncvs.testCases.TC_CVS_PreviewInputControl_6" />-->
+			<class name="com.solitoncvs.testCases.TC_CVS_PreviewInputControl_6" />
 			<class name="com.solitoncvs.testCases.TC_CVS_CurtainEffect_10" />
+			<class name="com.solitoncvs.testCases.TC_CVS_AddUsers_11" />
+			<class name="com.solitoncvs.testCases.TC_CVS_VideoInputControl_12" />
+			<class name="com.solitoncvs.testCases.TC_CVS_PreviewUploadedVideoInput_13" />
+			<class name="com.solitoncvs.testCases.TC_CVS_ImageInputControl_14" />
+			<class name="com.solitoncvs.testCases.TC_CVS_PreviewUploadedImageInput_15" />
+			<class name="com.solitoncvs.testCases.TC_CVS_SwitchEffect_8" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_48" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_52" />
+			
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_46" />-->
+			
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_8" />
+			
+			
+			
+	
+			
+			
+			
+			
 			
 			</classes>
 	</test>

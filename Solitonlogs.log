@@ -1,15 +1,12 @@
 [RemoteTestNG] detected TestNG version 6.14.3
-Starting ChromeDriver 73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72) on port 33944
+Starting ChromeDriver 73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72) on port 18270
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Apr 29, 2019 4:49:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 07, 2019 10:48:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
-Soliton - Dashboard
-
-Soliton - testing
 
 ===============================================
 Soliton_CVS_V1
-Total tests run: 1, Failures: 1, Skips: 0
+Total tests run: 1, Failures: 0, Skips: 0
 ===============================================
 

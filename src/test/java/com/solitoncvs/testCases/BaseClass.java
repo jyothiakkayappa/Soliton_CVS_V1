@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
@@ -73,5 +74,19 @@ public class BaseClass {
 		FileUtils.copyFile(source, target);
 		System.out.println("Screenshot Taken");
 	}
+	
+	//To generate Random String
+		public String RandomString()
+		{
+			String generatedString=RandomStringUtils.randomAlphabetic(36);
+			return(generatedString);
+		}
+		
+		//To generate Random Number
+			public String RandomNum()
+			{
+				String generatedNum=RandomStringUtils.randomNumeric(4);
+				return(generatedNum);
+			}
 
 }
