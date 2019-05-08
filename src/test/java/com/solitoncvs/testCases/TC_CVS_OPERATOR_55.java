@@ -3,13 +3,11 @@ package com.solitoncvs.testCases;
 import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
 import org.testng.annotations.Test;
 
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
 import com.solitoncvs.pageObjects.GoLiveWithoutAddingInputControl;
 import com.solitoncvs.pageObjects.Loginpage;
-import com.solitoncvs.pageObjects.SwitchEffects;
 
 public class TC_CVS_OPERATOR_55 extends BaseClass
 {
@@ -59,17 +57,23 @@ public class TC_CVS_OPERATOR_55 extends BaseClass
 		Thread.sleep(3000);
 		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
 		
-		boolean res1=driver.getPageSource().contains("Go Live");
-		if(res1)
-		{			
-			goLiveWInputCtl.addLivewithoutPlaybtn();
-			goLiveWInputCtl.endStream();	
-		}
-		else if(res1==false)
-		{
-			goLiveWInputCtl.endStream();
-			
-		}
+		goLiveWInputCtl.addLivewithoutPlaybtn();
+		goLiveWInputCtl.endStream();	
+		
+//		boolean res1=driver.getPageSource().contains("Go Live");
+//		if(res1)
+//		{			
+//			goLiveWInputCtl.addLivewithoutPlaybtn();
+//			goLiveWInputCtl.endStream();	
+//		}
+//		else if(res1==false)
+//		{
+//			captureScreen(driver,"TC_Operator_55");
+//			Thread.sleep(4000);
+//			goLiveWInputCtl.endStream();
+//			logger.info("GoLive Else If");
+//			
+//		}
 		
 	}
 	

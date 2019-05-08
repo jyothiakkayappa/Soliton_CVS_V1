@@ -6,16 +6,15 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
-import com.solitoncvs.pageObjects.AddVideoInputControl;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
 import com.solitoncvs.pageObjects.GoLiveWithoutAddingInputControl;
 import com.solitoncvs.pageObjects.Loginpage;
-import com.solitoncvs.pageObjects.SwitchEffects;
+import com.solitoncvs.pageObjects.OutputStreamControls;
 
-public class TC_CVS_OPERATOR_56 extends BaseClass
+public class TC_CVS_OPERATOR_71 extends BaseClass
 {
 	@Test
-	public void outputPreview() throws InterruptedException, IOException
+	public void startFBOutputStreamControl() throws InterruptedException, IOException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(3000);
@@ -61,21 +60,16 @@ public class TC_CVS_OPERATOR_56 extends BaseClass
 		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
 		
 		goLiveWInputCtl.addLivewithoutPlaybtn();
-		//goLiveWInputCtl.endStream();
 		
 		Thread.sleep(3000);
-		AddVideoInputControl addVideoInputControl=new AddVideoInputControl(driver);
-		addVideoInputControl.clickVideoInputControl();
-		addVideoInputControl.previewUploadVideoInput();
+		OutputStreamControls outputStreamControls=new OutputStreamControls(driver);
+		outputStreamControls.clickFacebookStreamControl();
 		
-		Thread.sleep(4000);
-		SwitchEffects switchEffects = new SwitchEffects(driver);
-		switchEffects.switchBtn();
+		Thread.sleep(3000);
+		outputStreamControls.clickStartfacebookStreamControlBtn();
 		
-		switchEffects.endStream();
-		
-		
-		
+		Thread.sleep(5000);
+		goLiveWInputCtl.endStream();
 	}
 
 }

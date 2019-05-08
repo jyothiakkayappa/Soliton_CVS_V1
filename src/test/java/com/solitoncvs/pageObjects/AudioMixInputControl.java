@@ -37,6 +37,16 @@ public class AudioMixInputControl
 	@CacheLookup
 	WebElement audioMixPlayBtn;
 	
+	//Audio Drag
+	@FindBy(xpath="//input[@id='myRange']")
+	@CacheLookup
+	WebElement audioMixDragLeft;
+	
+	//Stop Audio Mixing
+	@FindBy(xpath="//div[@class='flexcol']//div[@class='flexcol']//div//div[@class='flexcol preview-panel']//button[@class='btn-white']//div")
+	@CacheLookup
+	WebElement stopMixingBtn;
+	
 	public void clickAudioMixInput()
 	{
 		audioMixBtn.click();
@@ -60,6 +70,11 @@ public class AudioMixInputControl
 	public void clickAudioMixPlayBtn()
 	{
 		audioMixPlayBtn.click();
+	}
+	
+	public void clickStopMixing()
+	{
+		stopMixingBtn.click();
 	}
 
 }

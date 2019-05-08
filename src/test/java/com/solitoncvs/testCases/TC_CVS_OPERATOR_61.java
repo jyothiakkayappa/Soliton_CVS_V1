@@ -4,18 +4,21 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-import com.solitoncvs.pageObjects.AddVideoInputControl;
+import com.solitoncvs.pageObjects.AudioMixInputControl;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
 import com.solitoncvs.pageObjects.GoLiveWithoutAddingInputControl;
 import com.solitoncvs.pageObjects.Loginpage;
-import com.solitoncvs.pageObjects.SwitchEffects;
 
-public class TC_CVS_OPERATOR_56 extends BaseClass
+public class TC_CVS_OPERATOR_61 extends BaseClass
 {
 	@Test
-	public void outputPreview() throws InterruptedException, IOException
+	public void audioMixRightDrag() throws InterruptedException, IOException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(3000);
@@ -61,21 +64,20 @@ public class TC_CVS_OPERATOR_56 extends BaseClass
 		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
 		
 		goLiveWInputCtl.addLivewithoutPlaybtn();
-		//goLiveWInputCtl.endStream();
 		
 		Thread.sleep(3000);
-		AddVideoInputControl addVideoInputControl=new AddVideoInputControl(driver);
-		addVideoInputControl.clickVideoInputControl();
-		addVideoInputControl.previewUploadVideoInput();
+		AudioMixInputControl audioMixInputControl=new AudioMixInputControl(driver);
+		audioMixInputControl.clickAudioMixInput();
 		
-		Thread.sleep(4000);
-		SwitchEffects switchEffects = new SwitchEffects(driver);
-		switchEffects.switchBtn();
+		audioMixInputControl.clickAudioMixPlayBtn();
 		
-		switchEffects.endStream();
+		WebElement slider = driver.findElement(By.xpath("//input[@id='myRange']"));
+        Actions move = new Actions(driver);
+        Action action = (Action) move.dragAndDropBy(slider, 100, 0).build();
+        action.perform();
 		
-		
-		
+		Thread.sleep(5000);
+		goLiveWInputCtl.endStream();
 	}
 
 }

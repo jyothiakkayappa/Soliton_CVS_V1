@@ -18,9 +18,27 @@ public class UserDropDown
 	@CacheLookup
 	WebElement fullHistory;
 	
+	@FindBy(xpath="//button[@class='btn-white not-selectedTab']")
+	@CacheLookup
+	WebElement myMediaBtn;
+	
+	@FindBy(xpath="//body/div[@id='layoutroot']/div[@class='flexrow']/div/div[@class='flexcol']/div[2]/div[1]/button[1]")
+	@CacheLookup
+	WebElement selectImage;
+	
 	public void clickViewFullHistory()
 	{
 		fullHistory.click();
+	}
+	
+	public void clickMyMedia()
+	{
+		myMediaBtn.click();
+	}
+	
+	public void clickToSelectImage()
+	{
+		selectImage.click();
 	}
 
 }
