@@ -12,7 +12,7 @@ import com.solitoncvs.pageObjects.Loginpage;
 
 
 
-public class TC_CVS_LOGIN_1 extends BaseClass
+public class TC_CVS_OPERATOR_1 extends BaseClass
 {
 	
 	@Test

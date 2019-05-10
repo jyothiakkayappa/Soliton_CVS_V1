@@ -9,8 +9,19 @@
 	<test name="CVSWeb test" >
 		<parameter name="browser" value="chrome" />
 			<classes>
-			<!--  <class name="com.solitoncvs.testCases.TC_CVS_LOGIN_1" /> 
-			<class name="com.solitoncvs.testCases.TC_CVS_Createbroadcast_3" />
+			<!--  <class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_1" /> 
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_4" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_5" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_6" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_8" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_9" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_10" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_14" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_15" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_17" />
+			
+			
+			
 			<class name="com.solitoncvs.testCases.TC_CVS_AddLiveInput_4" />
 			<class name="com.solitoncvs.testCases.TC_CVS_PreviewInputControl_6" />
 			<class name="com.solitoncvs.testCases.TC_CVS_CurtainEffect_10" />
@@ -25,7 +36,7 @@
 			
 			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_46" />-->
 			
-			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_73" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_15" />
 			
 			
 			

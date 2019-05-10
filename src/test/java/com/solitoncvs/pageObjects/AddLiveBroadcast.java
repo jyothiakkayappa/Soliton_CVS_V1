@@ -15,6 +15,10 @@ public class AddLiveBroadcast
 		PageFactory.initElements(rdriver, this);
 	}
 	
+	@FindBy(xpath="//div[@id='inputTabLive']")
+	@CacheLookup
+	WebElement liveInputControlTab;
+	
 	@FindBy(xpath="//img[@src='/img/plus-c.png']")
 	@CacheLookup
 	WebElement addRTSPUrl;
@@ -26,6 +30,15 @@ public class AddLiveBroadcast
 	@FindBy(xpath="//button[text()='Add']")
 	@CacheLookup
 	WebElement addButton;
+	
+	@FindBy(xpath="//div[@id='add-live-modal']//select")
+	@CacheLookup
+	WebElement selectUrlDropdown;
+	
+	public void clickLiveInputControlTab()
+	{
+		liveInputControlTab.click();
+	}
 	
 	
 	public void addUrl()
@@ -42,6 +55,11 @@ public class AddLiveBroadcast
 	public void addButton()
 	{
 		addButton.click();
+	}
+	
+	public void clickSelectUrlDropdown()
+	{
+		selectUrlDropdown.click();
 	}
 	
 	

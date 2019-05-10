@@ -26,6 +26,15 @@ public class UserDropDown
 	@CacheLookup
 	WebElement selectImage;
 	
+	@FindBy(xpath="//div[28]//button[3][text()='Delete']")
+	@CacheLookup
+	WebElement deleteSelectImage;
+	
+	@FindBy(xpath="//div[28]//button[1]")
+	@CacheLookup
+	WebElement selectAllImage;
+	
+	
 	public void clickViewFullHistory()
 	{
 		fullHistory.click();
@@ -39,6 +48,16 @@ public class UserDropDown
 	public void clickToSelectImage()
 	{
 		selectImage.click();
+	}
+	
+	public void clickDeleteSelectImage()
+	{
+		deleteSelectImage.click();
+	}
+	
+	public void clickSelectAllImage()
+	{
+		selectAllImage.click();
 	}
 
 }

@@ -11,10 +11,10 @@ import com.solitoncvs.pageObjects.CreateNewBroadcast;
 import com.solitoncvs.pageObjects.GoLiveWithoutAddingInputControl;
 import com.solitoncvs.pageObjects.Loginpage;
 
-public class TC_CVS_OPERATOR_38 extends BaseClass
+public class TC_CVS_OPERATOR_40 extends BaseClass
 {
 	@Test
-	public void playAudioMix() throws InterruptedException, IOException
+	public void stopMixingwhilePreviewingVideo() throws InterruptedException, IOException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(3000);
@@ -71,6 +71,11 @@ public class TC_CVS_OPERATOR_38 extends BaseClass
 		audioMixInputControl.clickAudioMixPlayBtn();
 		
 		Thread.sleep(5000);
+		audioMixInputControl.clickStopMixingfromInputControl();
+		
+		
+		Thread.sleep(5000);
+		
 		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
 		goLiveWInputCtl.endStream();
 		

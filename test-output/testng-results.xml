@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Soliton_CVS_V1" duration-ms="43578" started-at="2019-05-08T10:34:50Z" finished-at="2019-05-08T10:35:33Z">
+  <suite name="Soliton_CVS_V1" duration-ms="22415" started-at="2019-05-10T10:23:50Z" finished-at="2019-05-10T10:24:12Z">
     <groups>
     </groups>
-    <test name="CVSWeb test" duration-ms="43578" started-at="2019-05-08T10:34:50Z" finished-at="2019-05-08T10:35:33Z">
-      <class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_73">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.solitoncvs.testCases.TC_CVS_OPERATOR_73@5702b3b1]" name="setup" is-config="true" duration-ms="11558" started-at="2019-05-08T10:34:50Z" finished-at="2019-05-08T10:35:01Z">
+    <test name="CVSWeb test" duration-ms="22415" started-at="2019-05-10T10:23:50Z" finished-at="2019-05-10T10:24:12Z">
+      <class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_15">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.solitoncvs.testCases.TC_CVS_OPERATOR_15@5702b3b1]" name="setup" is-config="true" duration-ms="5610" started-at="2019-05-10T10:23:50Z" finished-at="2019-05-10T10:23:56Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="saveFBOutputStreamControl()[pri:0, instance:com.solitoncvs.testCases.TC_CVS_OPERATOR_73@5702b3b1]" name="saveFBOutputStreamControl" duration-ms="31555" started-at="2019-05-08T10:35:01Z" finished-at="2019-05-08T10:35:33Z">
+        <test-method status="PASS" signature="addLiveOption()[pri:0, instance:com.solitoncvs.testCases.TC_CVS_OPERATOR_15@5702b3b1]" name="addLiveOption" duration-ms="16368" started-at="2019-05-10T10:23:56Z" finished-at="2019-05-10T10:24:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- saveFBOutputStreamControl -->
-      </class> <!-- com.solitoncvs.testCases.TC_CVS_OPERATOR_73 -->
+        </test-method> <!-- addLiveOption -->
+      </class> <!-- com.solitoncvs.testCases.TC_CVS_OPERATOR_15 -->
     </test> <!-- CVSWeb test -->
   </suite> <!-- Soliton_CVS_V1 -->
 </testng-results>

@@ -27,6 +27,10 @@ public class CreateNewBroadcast {
 	@CacheLookup
 	WebElement viewButton;
 	
+	@FindBy(xpath="//button[contains(text(),'Shutdown')]")
+	@CacheLookup
+	WebElement shutdownBtn;
+	
 	public void broadcasteName(String name)
 	{
 		txtBroadcastName.sendKeys(name);
@@ -40,6 +44,11 @@ public class CreateNewBroadcast {
 	public void viewBroadcast()
 	{
 			viewButton.click();
+	}
+	
+	public void clickshutdown()
+	{
+		shutdownBtn.click();
 	}
 	
 }

@@ -15,6 +15,18 @@ public class AudioMixInputControl
 		PageFactory.initElements(rdriver, this);
 	}
 	
+	@FindBy(xpath="//input[@id='audioLiveMixUrl']")
+	@CacheLookup
+	WebElement mixLiveUrlTextbox;
+	
+	@FindBy(xpath="//div[@class='live-panel']//div[@class='flexrow']//button[1]//div[1]")
+	@CacheLookup
+	WebElement mixLiveBtn;
+	
+	@FindBy(xpath="//body/div[@id='layoutroot']/div[@class='flexcol']/div[@class='stream-panel']/div[@class='inputs']/div[@class='flexcol']/div[@class='live-panel']/div[@class='thumb-panel']/div[@class='flexrow']/button[3]")
+	@CacheLookup
+	WebElement stopMixingBtnfromInputControl;
+	
 	@FindBy(xpath="//div[@id='inputTabAudioMix']")
 	@CacheLookup
 	WebElement audioMixBtn;
@@ -46,6 +58,21 @@ public class AudioMixInputControl
 	@FindBy(xpath="//div[@class='flexcol']//div[@class='flexcol']//div//div[@class='flexcol preview-panel']//button[@class='btn-white']//div")
 	@CacheLookup
 	WebElement stopMixingBtn;
+	
+	public void addMixLiveUrl(String url)
+	{
+		mixLiveUrlTextbox.sendKeys(url);
+	}
+	
+	public void clickMixLiveBtn()
+	{
+		mixLiveBtn.click();
+	}
+	
+	public void clickStopMixingfromInputControl()
+	{
+		stopMixingBtnfromInputControl.click();
+	}
 	
 	public void clickAudioMixInput()
 	{

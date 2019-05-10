@@ -1,18 +1,20 @@
 package com.solitoncvs.testCases;
 
 import java.io.IOException;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.solitoncvs.pageObjects.AddLiveBroadcast;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
 import com.solitoncvs.pageObjects.Loginpage;
 
-
-public class TC_CVS_Createbroadcast_3 extends BaseClass {
-	
+public class TC_CVS_OPERATOR_15 extends BaseClass
+{
 	@Test
-	public void createBroadcast() throws InterruptedException, IOException 
+	public void addLiveOption() throws InterruptedException, IOException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(3000);
@@ -32,22 +34,43 @@ public class TC_CVS_Createbroadcast_3 extends BaseClass {
 		boolean res=driver.getPageSource().contains("Start a new broadcast");
 		if(res)
 		{
+			captureScreen(driver,"TC_CVS_AddLiveInput_4");
 			createnewbroadcast.broadcasteName("ABC");
 			logger.info("Broadcast name  Provided");
 			createnewbroadcast.startBroadcast();
 			logger.info("Testcase pass");
-			Thread.sleep(3000);
+			Thread.sleep(6000);
+			createnewbroadcast.viewBroadcast();
 		}
-		else
+		else if(res==false)
 		{
-			captureScreen(driver,"TC_CVS_Createbroadcast_3");
-			//Assert.assertTrue(false);
-			Thread.sleep(3000);
+			//captureScreen(driver,"TC_CVS_AddLiveInput_4");
 			createnewbroadcast.viewBroadcast();
 			logger.info("Testcase pass");
 			Thread.sleep(3000);
 		}
+		//System.out.println(driver.getTitle());
+		Set <String> s=driver.getWindowHandles(); //get the id of the available windows/browsers
+		logger.info("window switched");
+		for(String i:s)
+		{
+			String t=driver.switchTo().window(i).getTitle();
+			System.out.println(t);
+		}
+		AddLiveBroadcast addLiveBroadcast = new AddLiveBroadcast(driver);
+		addLiveBroadcast.clickLiveInputControlTab();
+		addLiveBroadcast.addUrl();
 		
+		boolean res2=driver.getPageSource().contains("Add Live Stream");
+		if(res2==true)
+		{
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			Assert.assertTrue(false);
+		}
+		addLiveBroadcast.clickSelectUrlDropdown();
 		
 	}
 
