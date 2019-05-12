@@ -10,9 +10,31 @@
       <class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_131">
         <methods>
           <include name="selectAllImage"/>
+          <include name="tearDown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.solitoncvs.testCases.TC_CVS_OPERATOR_131 -->
+      <class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_5">
+        <methods>
+          <include name="shutdownBroadcast"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.solitoncvs.testCases.TC_CVS_OPERATOR_5 -->
+      <class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_130">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="deleteUploadedImage"/>
+        </methods>
+      </class> <!-- com.solitoncvs.testCases.TC_CVS_OPERATOR_130 -->
+      <class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_4">
+        <methods>
+          <include name="startBroadcast"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.solitoncvs.testCases.TC_CVS_OPERATOR_4 -->
     </classes>
   </test> <!-- CVSWeb test(failed) -->
 </suite> <!-- Failed suite [Soliton_CVS_V1] -->

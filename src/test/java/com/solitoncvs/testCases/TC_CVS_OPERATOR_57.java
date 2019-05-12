@@ -55,10 +55,11 @@ public class TC_CVS_OPERATOR_57 extends BaseClass
 			String t=driver.switchTo().window(i).getTitle();
 			System.out.println(t);
 		}
+		driver.manage().window().maximize();
 		Thread.sleep(3000);
 		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
 		
-		goLiveWInputCtl.addLivewithoutPlaybtn();
+		//goLiveWInputCtl.addLivewithoutPlaybtn();
 		goLiveWInputCtl.endStream();	
 	}
 

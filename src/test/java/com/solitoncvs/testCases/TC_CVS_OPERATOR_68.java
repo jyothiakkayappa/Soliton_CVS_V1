@@ -56,18 +56,19 @@ public class TC_CVS_OPERATOR_68 extends BaseClass
 			String t=driver.switchTo().window(i).getTitle();
 			System.out.println(t);
 		}
-		Thread.sleep(3000);
-		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
-		
-		goLiveWInputCtl.addLivewithoutPlaybtn();
+		driver.manage().window().maximize();
+//		Thread.sleep(3000);
+//		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
+//		
+//		goLiveWInputCtl.addLivewithoutPlaybtn();
 		
 		Thread.sleep(3000);
 		OutputStreamControls outputStreamControls=new OutputStreamControls(driver);
 		outputStreamControls.clickRTMPStreamControl();
 		outputStreamControls.clickCopyRTMPOutputUrl();
 		
-		Thread.sleep(5000);
-		goLiveWInputCtl.endStream();
+//		Thread.sleep(5000);
+//		goLiveWInputCtl.endStream();
 	}
 
 }

@@ -6,17 +6,14 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
-import com.solitoncvs.pageObjects.AddLiveBroadcast;
+import com.solitoncvs.pageObjects.AddTextInputControl;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
-import com.solitoncvs.pageObjects.GoLiveWithoutAddingInputControl;
 import com.solitoncvs.pageObjects.Loginpage;
-import com.solitoncvs.pageObjects.PreviewInputControl;
-import com.solitoncvs.pageObjects.SwitchEffects;
 
-public class TC_CVS_SwitchEffect_8 extends BaseClass
+public class TC_CVS_OPERATOR_45 extends BaseClass
 {
 	@Test
-	public void SwitchEffect() throws InterruptedException, IOException
+	public void addText() throws InterruptedException, IOException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(3000);
@@ -51,7 +48,6 @@ public class TC_CVS_SwitchEffect_8 extends BaseClass
 			logger.info("Testcase pass");
 			Thread.sleep(3000);
 		}
-		//System.out.println(driver.getTitle());
 		Set <String> s=driver.getWindowHandles(); //get the id of the available windows/browsers
 		logger.info("window switched");
 		for(String i:s)
@@ -59,28 +55,14 @@ public class TC_CVS_SwitchEffect_8 extends BaseClass
 			String t=driver.switchTo().window(i).getTitle();
 			System.out.println(t);
 		}
-		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
-		goLiveWInputCtl.addLivewithoutPlaybtn();
+		driver.manage().window().maximize();
 		Thread.sleep(3000);
 		
-		AddLiveBroadcast addLiveBroadcast = new AddLiveBroadcast(driver);
-		addLiveBroadcast.addUrl();
+		AddTextInputControl addTextInputControl=new AddTextInputControl(driver);
+		addTextInputControl.clickTextInputControl();
 		
-		Thread.sleep(3000);
-		addLiveBroadcast.addLiveUrl(url);
-		addLiveBroadcast.addButton();
-		
-		Thread.sleep(3000);
-		PreviewInputControl previewInputControl = new PreviewInputControl(driver);
-		previewInputControl.previewInputControl();
-		
-		Thread.sleep(3000);
-		SwitchEffects switchEffects = new SwitchEffects(driver);
-		switchEffects.switchBtn();
-		
-		Thread.sleep(3000);
-		switchEffects.endStream();
-		
+		addTextInputControl.entertext("Hello Soliton!!!");
+		addTextInputControl.clickAddText();
 		
 	}
 

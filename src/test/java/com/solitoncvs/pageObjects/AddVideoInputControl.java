@@ -15,7 +15,7 @@ public class AddVideoInputControl
 		PageFactory.initElements(rdriver, this);
 	}
 	
-	@FindBy(xpath="//div[@class='tab-btn']")
+	@FindBy(xpath="//div[@id='inputTabVideos']")
 	@CacheLookup
 	WebElement videoInputControl;
 	

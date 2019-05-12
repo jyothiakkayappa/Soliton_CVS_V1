@@ -34,7 +34,7 @@ public class TC_CVS_OPERATOR_15 extends BaseClass
 		boolean res=driver.getPageSource().contains("Start a new broadcast");
 		if(res)
 		{
-			captureScreen(driver,"TC_CVS_AddLiveInput_4");
+			captureScreen(driver,"TC_CVS_OPERATOR_15");
 			createnewbroadcast.broadcasteName("ABC");
 			logger.info("Broadcast name  Provided");
 			createnewbroadcast.startBroadcast();
@@ -57,10 +57,14 @@ public class TC_CVS_OPERATOR_15 extends BaseClass
 			String t=driver.switchTo().window(i).getTitle();
 			System.out.println(t);
 		}
+		Thread.sleep(3000);
 		AddLiveBroadcast addLiveBroadcast = new AddLiveBroadcast(driver);
 		addLiveBroadcast.clickLiveInputControlTab();
+		
+		Thread.sleep(3000);
 		addLiveBroadcast.addUrl();
 		
+		Thread.sleep(3000);
 		boolean res2=driver.getPageSource().contains("Add Live Stream");
 		if(res2==true)
 		{
@@ -70,7 +74,7 @@ public class TC_CVS_OPERATOR_15 extends BaseClass
 		{
 			Assert.assertTrue(false);
 		}
-		addLiveBroadcast.clickSelectUrlDropdown();
+		//addLiveBroadcast.clickSelectUrlDropdown();
 		
 	}
 

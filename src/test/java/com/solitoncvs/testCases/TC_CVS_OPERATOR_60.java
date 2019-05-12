@@ -56,10 +56,12 @@ public class TC_CVS_OPERATOR_60 extends BaseClass
 			String t=driver.switchTo().window(i).getTitle();
 			System.out.println(t);
 		}
-		Thread.sleep(3000);
-		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
+		driver.manage().window().maximize();
 		
-		goLiveWInputCtl.addLivewithoutPlaybtn();
+//		Thread.sleep(3000);
+//		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
+//		
+//		goLiveWInputCtl.addLivewithoutPlaybtn();
 		
 		Thread.sleep(3000);
 		AudioMixInputControl audioMixInputControl=new AudioMixInputControl(driver);
@@ -67,7 +69,7 @@ public class TC_CVS_OPERATOR_60 extends BaseClass
 		
 		audioMixInputControl.clickAudioMixPlayBtn();
 		Thread.sleep(5000);
-		goLiveWInputCtl.endStream();
+		//goLiveWInputCtl.endStream();
 		
 		
 	}

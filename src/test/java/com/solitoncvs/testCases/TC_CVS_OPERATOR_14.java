@@ -56,6 +56,7 @@ public class TC_CVS_OPERATOR_14 extends BaseClass
 			String t=driver.switchTo().window(i).getTitle();
 			System.out.println(t);
 		}
+		Thread.sleep(3000);
 		AddLiveBroadcast addLiveBroadcast = new AddLiveBroadcast(driver);
 		addLiveBroadcast.clickLiveInputControlTab();
 		

@@ -6,17 +6,18 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
-import com.solitoncvs.pageObjects.AddLiveBroadcast;
+//import com.solitoncvs.pageObjects.AddImageInputControl;
+//import com.solitoncvs.pageObjects.AddLiveBroadcast;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
-import com.solitoncvs.pageObjects.GoLiveWithoutAddingInputControl;
+//import com.solitoncvs.pageObjects.GoLiveWithoutAddingInputControl;
 import com.solitoncvs.pageObjects.Loginpage;
 import com.solitoncvs.pageObjects.PreviewInputControl;
 import com.solitoncvs.pageObjects.SwitchEffects;
 
-public class TC_CVS_FadeEffect_9 extends BaseClass
+public class TC_CVS_OPERATOR_23 extends BaseClass
 {
 	@Test
-	public void FadeEffect() throws InterruptedException, IOException
+	public void CurtainEffect() throws InterruptedException, IOException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(3000);
@@ -59,30 +60,36 @@ public class TC_CVS_FadeEffect_9 extends BaseClass
 			String t=driver.switchTo().window(i).getTitle();
 			System.out.println(t);
 		}
-		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
-		goLiveWInputCtl.addLivewithoutPlaybtn();
-		Thread.sleep(3000);
 		
-		AddLiveBroadcast addLiveBroadcast = new AddLiveBroadcast(driver);
-		addLiveBroadcast.addUrl();
+//		Thread.sleep(3000);
+//		AddImageInputControl addImageInputControl=new AddImageInputControl(driver);
+//		addImageInputControl.clickImageInputControl();
 		
-		Thread.sleep(3000);
-		addLiveBroadcast.addLiveUrl(url);
-		addLiveBroadcast.addButton();
+//		Thread.sleep(3000);
+//		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
+//		goLiveWInputCtl.addLivewithoutPlaybtn();
+		//Thread.sleep(3000);
+//		
+//		AddLiveBroadcast addLiveBroadcast = new AddLiveBroadcast(driver);
+//		addLiveBroadcast.addUrl();
+//		
+//		Thread.sleep(3000);
+//		addLiveBroadcast.addLiveUrl(url);
+//		addLiveBroadcast.addButton();
 		
 		Thread.sleep(3000);
 		PreviewInputControl previewInputControl = new PreviewInputControl(driver);
 		previewInputControl.previewInputControl();
+//		addImageInputControl.previewUploadedImage();
 		
 		Thread.sleep(3000);
 		SwitchEffects switchEffects = new SwitchEffects(driver);
-		switchEffects.fadeBtn();
+		switchEffects.curtainBtn();
 		
-		Thread.sleep(3000);
-		switchEffects.endStream();
+//		Thread.sleep(3000);
+//		switchEffects.endStream();
 		
 		
 	}
-
 
 }

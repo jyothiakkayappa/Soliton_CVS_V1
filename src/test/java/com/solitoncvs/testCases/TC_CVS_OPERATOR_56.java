@@ -57,10 +57,11 @@ public class TC_CVS_OPERATOR_56 extends BaseClass
 			String t=driver.switchTo().window(i).getTitle();
 			System.out.println(t);
 		}
-		Thread.sleep(3000);
-		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
-		
-		goLiveWInputCtl.addLivewithoutPlaybtn();
+		driver.manage().window().maximize();
+//		Thread.sleep(3000);
+//		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
+//		
+//		goLiveWInputCtl.addLivewithoutPlaybtn();
 		//goLiveWInputCtl.endStream();
 		
 		Thread.sleep(3000);
@@ -72,7 +73,7 @@ public class TC_CVS_OPERATOR_56 extends BaseClass
 		SwitchEffects switchEffects = new SwitchEffects(driver);
 		switchEffects.switchBtn();
 		
-		switchEffects.endStream();
+		//switchEffects.endStream();
 		
 		
 		

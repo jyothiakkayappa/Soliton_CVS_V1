@@ -61,8 +61,8 @@ public class TC_CVS_OPERATOR_46 extends BaseClass
 		AddTextInputControl addTextInputControl=new AddTextInputControl(driver);
 		addTextInputControl.clickTextInputControl();
 		
-		addTextInputControl.entertext("Hello Soliton!!!");
-		addTextInputControl.clickAddText();
+//		addTextInputControl.entertext("Hello Soliton!!!");
+//		addTextInputControl.clickAddText();
 		
 		addTextInputControl.clickRemoveText();
 	}

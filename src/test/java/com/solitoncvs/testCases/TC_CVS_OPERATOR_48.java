@@ -82,8 +82,10 @@ public class TC_CVS_OPERATOR_48 extends BaseClass
 		Thread.sleep(3000);
 		addWatermarkInputControl.clickUploadSelectedImage();
 		
-		addWatermarkInputControl.clickRemoveWatermarkBtn();
-		addWatermarkInputControl.clickAreyousureRemoveWMBtn();
+		Thread.sleep(5000);
+		
+//		addWatermarkInputControl.clickRemoveWatermarkBtn();
+//		addWatermarkInputControl.clickAreyousureRemoveWMBtn();
 		
 	}
 	

@@ -66,42 +66,42 @@ public class TC_CVS_OPERATOR_53 extends BaseClass
 		AddWatermarkInputControl addWatermarkInputControl=new AddWatermarkInputControl(driver);
 		addWatermarkInputControl.clickWatermarkInputControl();
 		
-//		Thread.sleep(3000);
+		Thread.sleep(3000);
 //		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
 //		goLiveWInputCtl.addLivewithoutPlaybtn();
 
-		boolean res1 = driver.getPageSource().contains("No watermark image has been set");
-		
-		if(res1)
-		{
-			Thread.sleep(3000);
-			addWatermarkInputControl.clickUploadImageBtn();
-			
-			String imageFilePath="F:\\Soliton Frameworkdata\\Upload Images\\";
-			String inputFilePath="F:\\Soliton Frameworkdata\\Upload Images\\";
-			
-			Screen s1= new Screen();
-			
-			Pattern fileNameInputTextbox = new Pattern(imageFilePath + "FilePath.PNG");
-			Pattern openButton = new Pattern(imageFilePath + "Open.PNG");
-			
-			
-			Thread.sleep(3000);
-			s1.wait(fileNameInputTextbox,20);
-			s1.type(fileNameInputTextbox,inputFilePath +"Tulips.jpg");
-			s1.click(openButton);
-			
-			Thread.sleep(3000);
-			addWatermarkInputControl.clickUploadSelectedImage();
-		}
-		else
-		{
-			addWatermarkInputControl.clickOverlayWatermark();
-		}
+//		boolean res1 = driver.getPageSource().contains("No watermark image has been set");
+//		
+//		if(res1)
+//		{
+//			Thread.sleep(3000);
+//			addWatermarkInputControl.clickUploadImageBtn();
+//			
+//			String imageFilePath="F:\\Soliton Frameworkdata\\Upload Images\\";
+//			String inputFilePath="F:\\Soliton Frameworkdata\\Upload Images\\";
+//			
+//			Screen s1= new Screen();
+//			
+//			Pattern fileNameInputTextbox = new Pattern(imageFilePath + "FilePath.PNG");
+//			Pattern openButton = new Pattern(imageFilePath + "Open.PNG");
+//			
+//			
+//			Thread.sleep(3000);
+//			s1.wait(fileNameInputTextbox,20);
+//			s1.type(fileNameInputTextbox,inputFilePath +"Tulips.jpg");
+//			s1.click(openButton);
+//			
+//			Thread.sleep(3000);
+//			addWatermarkInputControl.clickUploadSelectedImage();
+//		}
+//		else
+//		{
+//			addWatermarkInputControl.clickOverlayWatermark();
+//		}
 		addWatermarkInputControl.clickRemoveOverlay();
 
-//		SwitchEffects switchEffects = new SwitchEffects(driver);
-//		switchEffects.endStream();
+		SwitchEffects switchEffects = new SwitchEffects(driver);
+		switchEffects.endStream();
 	}
 
 }

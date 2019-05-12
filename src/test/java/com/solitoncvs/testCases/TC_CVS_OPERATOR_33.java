@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import com.solitoncvs.pageObjects.AudioMixInputControl;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
-import com.solitoncvs.pageObjects.GoLiveWithoutAddingInputControl;
+//import com.solitoncvs.pageObjects.GoLiveWithoutAddingInputControl;
 import com.solitoncvs.pageObjects.Loginpage;
 
 public class TC_CVS_OPERATOR_33 extends BaseClass
@@ -56,10 +56,10 @@ public class TC_CVS_OPERATOR_33 extends BaseClass
 			String t=driver.switchTo().window(i).getTitle();
 			System.out.println(t);
 		}
-		Thread.sleep(3000);
-		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
-		
-		goLiveWInputCtl.addLivewithoutPlaybtn();
+//		Thread.sleep(3000);
+//		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
+//		
+//		goLiveWInputCtl.addLivewithoutPlaybtn();
 		
 		Thread.sleep(3000);
 		
@@ -69,8 +69,8 @@ public class TC_CVS_OPERATOR_33 extends BaseClass
 		audioMixInputControl.addMixLiveUrl("rtsp://52.192.114.168:20091/stc");
 		audioMixInputControl.clickMixLiveBtn();
 		
-		Thread.sleep(5000);
-		goLiveWInputCtl.endStream();
+//		Thread.sleep(5000);
+//		goLiveWInputCtl.endStream();
 		
 	}
 

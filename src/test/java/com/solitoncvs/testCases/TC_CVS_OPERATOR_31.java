@@ -4,23 +4,17 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
-import org.testng.Assert;
-//import org.openqa.selenium.By;
-//import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-import com.solitoncvs.pageObjects.AddVideoInputControl;
+import com.solitoncvs.pageObjects.AddImageInputControl;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
 import com.solitoncvs.pageObjects.Loginpage;
+import com.solitoncvs.pageObjects.SwitchEffects;
 
-public class TC_CVS_VideoInputControl_12 extends BaseClass
+public class TC_CVS_OPERATOR_31 extends BaseClass
 {
 	@Test
-	public void videoInputControl() throws InterruptedException, IOException, FindFailed
+	public void previewUploadedImage() throws IOException, InterruptedException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(3000);
@@ -65,43 +59,12 @@ public class TC_CVS_VideoInputControl_12 extends BaseClass
 		}
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
-		AddVideoInputControl addVideoInputControl=new AddVideoInputControl(driver);
-		addVideoInputControl.clickVideoInputControl();
-		addVideoInputControl.videoAddBtn();
-		
-		String imageFilePath="F:\\Soliton Frameworkdata\\Upload Images\\";
-		String inputFilePath="F:\\Soliton Frameworkdata\\Upload Images\\";
-		
-		Screen s1= new Screen();
-		
-		Pattern fileNameInputTextbox = new Pattern(imageFilePath + "FilePath.PNG");
-		Pattern openButton = new Pattern(imageFilePath + "Open.PNG");
-		
-		Thread.sleep(3000);
-		s1.wait(fileNameInputTextbox,20);
-		s1.type(fileNameInputTextbox,inputFilePath +"Wildlife.wmv");
-		s1.click(openButton);
-		
-		Thread.sleep(3000);
-		addVideoInputControl.clickUploadButton();
-		
-		boolean upload=driver.getPageSource().contains("Uploads");
-		if(upload==true)
-		{
-			Assert.assertTrue(true);
-		}
-		else
-		{
-			captureScreen(driver,"TC_CVS_VideoInputControl_12");
-			Assert.assertTrue(false);
-		}
-		
-		
-//		WebElement VideoBtn = driver.findElement(By.xpath("//div[@class='tab-btn']"));
-//		Actions act1 = new Actions(driver);
-//		act1.moveToElement(VideoBtn).click().build().perform();
-		
-		
+		AddImageInputControl addImageInputControl=new AddImageInputControl(driver);
+		addImageInputControl.clickImageInputControl();
+		addImageInputControl.previewUploadedImage();
+		SwitchEffects switchEffects=new SwitchEffects(driver);
+		switchEffects.switchBtn();
 	}
+	
 
 }

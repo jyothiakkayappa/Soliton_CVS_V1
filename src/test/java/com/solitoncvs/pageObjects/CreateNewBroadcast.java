@@ -23,7 +23,7 @@ public class CreateNewBroadcast {
 	@CacheLookup
 	WebElement startButton;
 	
-	@FindBy(xpath="//button[text()='View']")
+	@FindBy(xpath="//button[contains(text(),'View')]")
 	@CacheLookup
 	WebElement viewButton;
 	

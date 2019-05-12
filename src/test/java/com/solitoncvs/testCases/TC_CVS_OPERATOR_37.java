@@ -61,6 +61,7 @@ public class TC_CVS_OPERATOR_37 extends BaseClass
 		AudioMixInputControl audioMixInputControl=new AudioMixInputControl(driver);
 		audioMixInputControl.clickAudioMixInput();
 		
+		Thread.sleep(3000);
 		audioMixInputControl.clickPreviewAudioFile();
 		
 	}

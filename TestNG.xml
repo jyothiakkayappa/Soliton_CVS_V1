@@ -9,34 +9,93 @@
 	<test name="CVSWeb test" >
 		<parameter name="browser" value="chrome" />
 			<classes>
-			<!--  <class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_1" /> 
+			
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_1" /> 
 			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_4" />
 			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_5" />
 			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_6" />
 			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_8" />
 			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_9" />
 			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_10" />
+			
 			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_14" />
 			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_15" />
 			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_17" />
 			
+
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_18" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_21" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_22" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_23" />
+			<class name="com.solitoncvs.testCases.TC_CVS_DeleteAddedInputControl_7" /> 
 			
 			
-			<class name="com.solitoncvs.testCases.TC_CVS_AddLiveInput_4" />
-			<class name="com.solitoncvs.testCases.TC_CVS_PreviewInputControl_6" />
-			<class name="com.solitoncvs.testCases.TC_CVS_CurtainEffect_10" />
-			<class name="com.solitoncvs.testCases.TC_CVS_AddUsers_11" />
-			<class name="com.solitoncvs.testCases.TC_CVS_VideoInputControl_12" />
-			<class name="com.solitoncvs.testCases.TC_CVS_PreviewUploadedVideoInput_13" />
-			<class name="com.solitoncvs.testCases.TC_CVS_ImageInputControl_14" />
-			<class name="com.solitoncvs.testCases.TC_CVS_PreviewUploadedImageInput_15" />
-			<class name="com.solitoncvs.testCases.TC_CVS_SwitchEffect_8" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_24" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_25" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_27" />
+			
+			
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_28" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_29" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_31" />
+			
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_32" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_33" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_34" />
+			
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_36" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_37" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_38" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_40" />
+			
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_42" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_43" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_45" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_46" />
+			
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_47" />
 			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_48" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_49" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_50" />
 			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_52" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_53" />
 			
-			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_46" />-->
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_55" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_56" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_58" />
 			
-			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_15" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_60" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_61" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_62" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_64" />
+			
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_66" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_67" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_68" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_69" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_71" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_73" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_76" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_77" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_79" />
+			
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_57" />
+			
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_121" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_123" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_126" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_129" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_130" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_131" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_134" />
+			<class name="com.solitoncvs.testCases.TC_CVS_OPERATOR_135" />
+			
+			
+			
+			
+			
+			
+			
 			
 			
 			
@@ -45,6 +104,46 @@
 			
 			
 			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+
 			
 			</classes>
 	</test>

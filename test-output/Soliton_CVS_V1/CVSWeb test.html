@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CVSWeb test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>59/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 10 15:53:50 IST 2019</td>
+<td>Started on:</td><td>Sun May 12 22:22:46 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22415 ms)</td>
+<tr><td>Total time:</td><td>1770 seconds (1770844 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,378 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_130.deleteUploadedImage()'><b>deleteUploadedImage</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_130</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[28]//button[3][text()=&apos;Delete&apos;]&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SYSTEM1&apos;, ip: &apos;192.168.43.114&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Pentacle\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:2933}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: 33becf756dd83d307bf286479e4deb40
+*** Element info: {Using=xpath, value=//div[28]//button[3][text()=&apos;Delete&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.solitoncvs.pageObjects.UserDropDown.clickDeleteSelectImage(UserDropDown.java:55)
+	at com.solitoncvs.testCases.TC_CVS_OPERATOR_130.deleteUploadedImage(TC_CVS_OPERATOR_130.java:92)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1974397962", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1974397962'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[28]//button[3][text()=&apos;Delete&apos;]&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SYSTEM1&apos;, ip: &apos;192.168.43.114&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Pentacle\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:2933}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: 33becf756dd83d307bf286479e4deb40
+*** Element info: {Using=xpath, value=//div[28]//button[3][text()=&apos;Delete&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.solitoncvs.pageObjects.UserDropDown.clickDeleteSelectImage(UserDropDown.java:55)
+	at com.solitoncvs.testCases.TC_CVS_OPERATOR_130.deleteUploadedImage(TC_CVS_OPERATOR_130.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>30</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_130@4bbfb90a</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_131.selectAllImage()'><b>selectAllImage</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_131</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[28]//button[1]&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SYSTEM1&apos;, ip: &apos;192.168.43.114&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Pentacle\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:3011}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: cb119c7a5d4b8baa6f8bf8b7eb97efcd
+*** Element info: {Using=xpath, value=//div[28]//button[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.solitoncvs.pageObjects.UserDropDown.clickSelectAllImage(UserDropDown.java:60)
+	at com.solitoncvs.testCases.TC_CVS_OPERATOR_131.selectAllImage(TC_CVS_OPERATOR_131.java:79)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1874140695", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1874140695'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[28]//button[1]&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SYSTEM1&apos;, ip: &apos;192.168.43.114&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Pentacle\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:3011}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: cb119c7a5d4b8baa6f8bf8b7eb97efcd
+*** Element info: {Using=xpath, value=//div[28]//button[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.solitoncvs.pageObjects.UserDropDown.clickSelectAllImage(UserDropDown.java:60)
+	at com.solitoncvs.testCases.TC_CVS_OPERATOR_131.selectAllImage(TC_CVS_OPERATOR_131.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>30</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_131@7c29daf3</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_5.shutdownBroadcast()'><b>shutdownBroadcast</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_5</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Start&apos;]&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SYSTEM1&apos;, ip: &apos;192.168.43.114&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Pentacle\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63548}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: bd4f5ae0c426a335b1d620e5d4c85446
+*** Element info: {Using=xpath, value=//button[text()=&apos;Start&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.solitoncvs.pageObjects.CreateNewBroadcast.startBroadcast(CreateNewBroadcast.java:41)
+	at com.solitoncvs.testCases.TC_CVS_OPERATOR_5.shutdownBroadcast(TC_CVS_OPERATOR_5.java:31)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1233595751", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1233595751'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Start&apos;]&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SYSTEM1&apos;, ip: &apos;192.168.43.114&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Pentacle\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63548}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: bd4f5ae0c426a335b1d620e5d4c85446
+*** Element info: {Using=xpath, value=//button[text()=&apos;Start&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.solitoncvs.pageObjects.CreateNewBroadcast.startBroadcast(CreateNewBroadcast.java:41)
+	at com.solitoncvs.testCases.TC_CVS_OPERATOR_5.shutdownBroadcast(TC_CVS_OPERATOR_5.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>17</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_5@1f28c152</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_4.startBroadcast()'><b>startBroadcast</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_4</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;title&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SYSTEM1&apos;, ip: &apos;192.168.43.114&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Pentacle\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63500}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: 648dc9dcec53d79cf78ca70a4bcbbf7f
+*** Element info: {Using=id, value=title}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+	at com.solitoncvs.pageObjects.CreateNewBroadcast.broadcasteName(CreateNewBroadcast.java:36)
+	at com.solitoncvs.testCases.TC_CVS_OPERATOR_4.startBroadcast(TC_CVS_OPERATOR_4.java:29)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2010545395", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2010545395'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;title&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SYSTEM1&apos;, ip: &apos;192.168.43.114&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Pentacle\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63500}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: 648dc9dcec53d79cf78ca70a4bcbbf7f
+*** Element info: {Using=id, value=title}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+	at com.solitoncvs.pageObjects.CreateNewBroadcast.broadcasteName(CreateNewBroadcast.java:36)
+	at com.solitoncvs.testCases.TC_CVS_OPERATOR_4.startBroadcast(TC_CVS_OPERATOR_4.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>17</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_4@369f73a2</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,10 +447,300 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_17.AddLiveUrl()'><b>AddLiveUrl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_17</td>
+<td></td>
+<td>22</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_17@2b9627bc</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_135.ContactUsOption()'><b>ContactUsOption</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_135</td>
+<td></td>
+<td>13</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_135@5a8806ef</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_23.CurtainEffect()'><b>CurtainEffect</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_23</td>
+<td></td>
+<td>22</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_23@7b49cea0</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_22.FadeEffect()'><b>FadeEffect</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_22</td>
+<td></td>
+<td>22</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_22@61f8bee4</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_68.RTMPStreamControl()'><b>RTMPStreamControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_68</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_68@22a67b4</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_66.RTSPStreamControl()'><b>RTSPStreamControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_66</td>
+<td></td>
+<td>19</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_66@6321e813</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_21.SwitchEffect()'><b>SwitchEffect</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_21</td>
+<td></td>
+<td>22</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_21@4f970963</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_36.addAudioFile()'><b>addAudioFile</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_36</td>
+<td></td>
+<td>33</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_36@43814d18</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_14.addLiveInputControl()'><b>addLiveInputControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_14</td>
+<td></td>
+<td>18</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_14@1d16f93d</td></tr>
+<tr>
 <td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_15.addLiveOption()'><b>addLiveOption</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_15</td>
 <td></td>
+<td>25</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_15@67b92f0a</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_55.addLiveWithoutInputControl()'><b>addLiveWithoutInputControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_55</td>
+<td></td>
+<td>19</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_55@3cef309d</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_43.addText()'><b>addText</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_43</td>
+<td></td>
+<td>21</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_43@2758fe70</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_45.addText()'><b>addText</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_45</td>
+<td></td>
+<td>23</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_45@1f36e637</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_25.addVideoInputControl()'><b>addVideoInputControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_25</td>
+<td></td>
+<td>36</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_25@5b87ed94</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_32.audioMixInputControl()'><b>audioMixInputControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_32</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_32@3dd4520b</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_62.audioMixLeftDrag()'><b>audioMixLeftDrag</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_62</td>
+<td></td>
+<td>26</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_62@3a883ce7</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_60.audioMixOutputControl()'><b>audioMixOutputControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_60</td>
+<td></td>
+<td>25</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_60@49fc609f</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_61.audioMixRightDrag()'><b>audioMixRightDrag</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_61</td>
+<td></td>
+<td>25</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_61@cd2dae5</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_121.broadcastHistoryDropdown()'><b>broadcastHistoryDropdown</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_121</td>
+<td></td>
+<td>14</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_121@a7e666</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_49.changeWatermarkImage()'><b>changeWatermarkImage</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_49</td>
+<td></td>
+<td>27</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_49@1dfe2924</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_10.contactUsOption()'><b>contactUsOption</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_10</td>
+<td></td>
+<td>13</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_10@6325a3ee</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_67.copyRTSPOutputUrl()'><b>copyRTSPOutputUrl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_67</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_67@79be0360</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_6.createBroadcast()'><b>createBroadcast</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_6</td>
+<td></td>
 <td>16</td>
-<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_15@5702b3b1</td></tr>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_6@7d907bac</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_DeleteAddedInputControl_7.deleteAddedInputControl()'><b>deleteAddedInputControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_DeleteAddedInputControl_7</td>
+<td></td>
+<td>26</td>
+<td>com.solitoncvs.testCases.TC_CVS_DeleteAddedInputControl_7@887af79</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_57.endStream()'><b>endStream</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_57</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_57@72b6cbcc</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_69.facebookStreamControl()'><b>facebookStreamControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_69</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_69@57855c9a</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_28.imageInputControl()'><b>imageInputControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_28</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_28@5bc79255</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_29.imageInputControl()'><b>imageInputControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_29</td>
+<td></td>
+<td>34</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_29@47ef968d</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_1.loginTest()'><b>loginTest</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_1</td>
+<td></td>
+<td>13</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_1@731a74c</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_33.mixLive()'><b>mixLive</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_33</td>
+<td></td>
+<td>19</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_33@5ae63ade</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_129.myMediaSettings()'><b>myMediaSettings</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_129</td>
+<td></td>
+<td>17</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_129@7494e528</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_56.outputPreview()'><b>outputPreview</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_56</td>
+<td></td>
+<td>24</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_56@32709393</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_52.overlayWatermark()'><b>overlayWatermark</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_52</td>
+<td></td>
+<td>29</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_52@6e6c3152</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_38.playAudioMix()'><b>playAudioMix</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_38</td>
+<td></td>
+<td>29</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_38@3701eaf6</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_18.previewInputControl()'><b>previewInputControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_18</td>
+<td></td>
+<td>22</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_18@65e2dbf3</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_37.previewUploadedAudioFile()'><b>previewUploadedAudioFile</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_37</td>
+<td></td>
+<td>23</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_37@5c5a1b69</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_31.previewUploadedImage()'><b>previewUploadedImage</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_31</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_31@23e028a9</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_27.previewUploadedInput()'><b>previewUploadedInput</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_27</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_27@6e0e048a</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_9.privacyOption()'><b>privacyOption</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_9</td>
+<td></td>
+<td>13</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_9@3a5ed7a6</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_134.privacyOption()'><b>privacyOption</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_134</td>
+<td></td>
+<td>13</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_134@9660f4e</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_123.profileOption()'><b>profileOption</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_123</td>
+<td></td>
+<td>13</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_123@68bbe345</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_46.removeText()'><b>removeText</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_46</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_46@578486a3</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_50.removeWaterMark()'><b>removeWaterMark</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_50</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_50@6ebc05a6</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_53.removeWaterlay()'><b>removeWaterlay</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_53</td>
+<td></td>
+<td>23</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_53@50b494a6</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_73.saveFBOutputStreamControl()'><b>saveFBOutputStreamControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_73</td>
+<td></td>
+<td>23</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_73@3224f60b</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_79.saveYouTubeOutputStreamControl()'><b>saveYouTubeOutputStreamControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_79</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_79@6737fd8f</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_126.settingsOption()'><b>settingsOption</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_126</td>
+<td></td>
+<td>17</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_126@30b8a058</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_71.startFBOutputStreamControl()'><b>startFBOutputStreamControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_71</td>
+<td></td>
+<td>23</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_71@3b084709</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_77.startYoutubeOutPutStreamControl()'><b>startYoutubeOutPutStreamControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_77</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_77@1efed156</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_64.stopAudioMixing()'><b>stopAudioMixing</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_64</td>
+<td></td>
+<td>28</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_64@4973813a</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_34.stopMixingFromInputControl()'><b>stopMixingFromInputControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_34</td>
+<td></td>
+<td>22</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_34@610694f1</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_40.stopMixingwhilePreviewingVideo()'><b>stopMixingwhilePreviewingVideo</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_40</td>
+<td></td>
+<td>25</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_40@627551fb</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_58.switchAnyInputControl()'><b>switchAnyInputControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_58</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_58@3d99d22e</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_42.textInputControl()'><b>textInputControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_42</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_42@2b552920</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_48.uploadImage()'><b>uploadImage</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_48</td>
+<td></td>
+<td>39</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_48@35d176f7</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_24.videoInputControlTab()'><b>videoInputControlTab</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_24</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_24@7fac631b</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_8.viewFullHistoryOnDashBoardPage()'><b>viewFullHistoryOnDashBoardPage</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_8</td>
+<td></td>
+<td>11</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_8@7791a895</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_47.watermarkInputControl()'><b>watermarkInputControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_47</td>
+<td></td>
+<td>21</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_47@551aa95a</td></tr>
+<tr>
+<td title='com.solitoncvs.testCases.TC_CVS_OPERATOR_76.youTubeStreamControl()'><b>youTubeStreamControl</b><br>Test class: com.solitoncvs.testCases.TC_CVS_OPERATOR_76</td>
+<td></td>
+<td>20</td>
+<td>com.solitoncvs.testCases.TC_CVS_OPERATOR_76@63e2203c</td></tr>
 </table><p>
 </body>
 </html>

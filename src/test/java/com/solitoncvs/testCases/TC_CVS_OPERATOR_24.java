@@ -9,12 +9,11 @@ import org.testng.annotations.Test;
 import com.solitoncvs.pageObjects.AddVideoInputControl;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
 import com.solitoncvs.pageObjects.Loginpage;
-import com.solitoncvs.pageObjects.SwitchEffects;
 
-public class TC_CVS_PreviewUploadedVideoInput_13 extends BaseClass
+public class TC_CVS_OPERATOR_24 extends BaseClass
 {
 	@Test
-	public void previewUploadedInput() throws InterruptedException, IOException
+	public void videoInputControlTab() throws InterruptedException, IOException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(3000);
@@ -61,13 +60,6 @@ public class TC_CVS_PreviewUploadedVideoInput_13 extends BaseClass
 		Thread.sleep(3000);
 		AddVideoInputControl addVideoInputControl=new AddVideoInputControl(driver);
 		addVideoInputControl.clickVideoInputControl();
-		addVideoInputControl.previewUploadVideoInput();
-		SwitchEffects switchEffects=new SwitchEffects(driver);
-		switchEffects.switchBtn();
-//		switchEffects.curtainBtn();
-//		switchEffects.fadeBtn();
-		
-		
 	}
 
 }

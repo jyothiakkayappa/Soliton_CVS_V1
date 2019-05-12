@@ -4,30 +4,33 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Pattern;
+import org.sikuli.script.Screen;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.solitoncvs.pageObjects.AddLiveBroadcast;
+import com.solitoncvs.pageObjects.AddImageInputControl;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
 import com.solitoncvs.pageObjects.Loginpage;
-import com.solitoncvs.pageObjects.PreviewInputControl;
 
-public class TC_CVS_PreviewInputControl_6 extends BaseClass
+public class TC_CVS_OPERATOR_29 extends BaseClass
 {
 	@Test
-	public void previewInputControl() throws InterruptedException, IOException
+	public void imageInputControl() throws InterruptedException, IOException, FindFailed
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(3000);
-		Loginpage lp = new Loginpage(driver);
+		Loginpage lp =new Loginpage(driver);
 		lp.setEmail(email);
-		logger.info("Email Passed");
+		logger.info("Email Provided");
 		lp.setPassword(password);
-		logger.info("password entered");
+		logger.info("password Provided");
 		lp.setOTP(otp);
-		logger.info("otp provided");
+		logger.info("OTP Provided");
 		lp.clickSignIn();
 		
-        Thread.sleep(3000);
+		Thread.sleep(3000);
 		
 		CreateNewBroadcast createnewbroadcast = new CreateNewBroadcast(driver);
 		Thread.sleep(3000);
@@ -57,24 +60,39 @@ public class TC_CVS_PreviewInputControl_6 extends BaseClass
 			String t=driver.switchTo().window(i).getTitle();
 			System.out.println(t);
 		}
+		driver.manage().window().maximize();
 		Thread.sleep(3000);
+		AddImageInputControl addImageInputControl=new AddImageInputControl(driver);
+		addImageInputControl.clickImageInputControl();
+		Thread.sleep(3000);
+		addImageInputControl.imageAddButton();
 		
-		AddLiveBroadcast addLiveBroadcast = new AddLiveBroadcast(driver);
-		addLiveBroadcast.addUrl();
+		String imageFilePath="F:\\Soliton Frameworkdata\\Upload Images\\";
+		String inputFilePath="F:\\Soliton Frameworkdata\\Upload Images\\";
+		
+		Screen s1= new Screen();
+		
+		Pattern fileNameInputTextbox = new Pattern(imageFilePath + "FilePath.PNG");
+		Pattern openButton = new Pattern(imageFilePath + "Open.PNG");
 		
 		Thread.sleep(3000);
-		addLiveBroadcast.addLiveUrl(url);
-		addLiveBroadcast.addButton();
+		s1.wait(fileNameInputTextbox,20);
+		s1.type(fileNameInputTextbox,inputFilePath +"Tulips.jpg");
+		s1.click(openButton);
 		
 		Thread.sleep(3000);
-		captureScreen(driver,"TC_CVS_PreviewInputControl_6");
-		PreviewInputControl previewInputControl = new PreviewInputControl(driver);
-		previewInputControl.previewInputControl();
-		logger.info("Input Clicked ");
+		addImageInputControl.clickImageUploadButton();
 		
-		
+		boolean upload=driver.getPageSource().contains("Uploads");
+		if(upload==true)
+		{
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			captureScreen(driver,"TC_CVS_ImageInputControl_14");
+			Assert.assertTrue(false);
+		}
 	}
-	
-	
 
 }

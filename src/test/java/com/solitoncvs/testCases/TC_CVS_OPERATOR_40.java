@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import com.solitoncvs.pageObjects.AudioMixInputControl;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
-import com.solitoncvs.pageObjects.GoLiveWithoutAddingInputControl;
+//import com.solitoncvs.pageObjects.GoLiveWithoutAddingInputControl;
 import com.solitoncvs.pageObjects.Loginpage;
 
 public class TC_CVS_OPERATOR_40 extends BaseClass
@@ -62,22 +62,22 @@ public class TC_CVS_OPERATOR_40 extends BaseClass
 		AudioMixInputControl audioMixInputControl=new AudioMixInputControl(driver);
 		audioMixInputControl.clickAudioMixInput();
 		
-		GoLiveWithoutAddingInputControl goLiveWithoutAddingInputControl=new GoLiveWithoutAddingInputControl(driver);
-	
-		Thread.sleep(3000);
-		goLiveWithoutAddingInputControl.addLivewithoutPlaybtn();
-		
-		Thread.sleep(3000);
-		audioMixInputControl.clickAudioMixPlayBtn();
+//		GoLiveWithoutAddingInputControl goLiveWithoutAddingInputControl=new GoLiveWithoutAddingInputControl(driver);
+//	
+//		Thread.sleep(3000);
+//		goLiveWithoutAddingInputControl.addLivewithoutPlaybtn();
+//		
+//		Thread.sleep(3000);
+//		audioMixInputControl.clickAudioMixPlayBtn();
 		
 		Thread.sleep(5000);
 		audioMixInputControl.clickStopMixingfromInputControl();
 		
 		
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
 		
-		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
-		goLiveWInputCtl.endStream();
+//		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
+//		goLiveWInputCtl.endStream();
 		
 	}
 

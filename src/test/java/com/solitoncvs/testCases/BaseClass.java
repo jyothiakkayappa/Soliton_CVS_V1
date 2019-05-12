@@ -60,7 +60,7 @@ public class BaseClass {
 		logger.info("Url is opened");
 	}
 	
-	//@AfterClass
+	@AfterClass
 	public void tearDown()
 	{
 		driver.quit();

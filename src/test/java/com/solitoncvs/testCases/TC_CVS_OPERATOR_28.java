@@ -4,20 +4,16 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.solitoncvs.pageObjects.AddImageInputControl;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
 import com.solitoncvs.pageObjects.Loginpage;
 
-public class TC_CVS_ImageInputControl_14 extends BaseClass
+public class TC_CVS_OPERATOR_28 extends BaseClass
 {
 	@Test
-	public void imageInputControl() throws InterruptedException, IOException, FindFailed
+	public void imageInputControl() throws InterruptedException, IOException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(3000);
@@ -64,35 +60,7 @@ public class TC_CVS_ImageInputControl_14 extends BaseClass
 		Thread.sleep(3000);
 		AddImageInputControl addImageInputControl=new AddImageInputControl(driver);
 		addImageInputControl.clickImageInputControl();
-		Thread.sleep(3000);
-		addImageInputControl.imageAddButton();
 		
-		String imageFilePath="F:\\Soliton Frameworkdata\\Upload Images\\";
-		String inputFilePath="F:\\Soliton Frameworkdata\\Upload Images\\";
-		
-		Screen s1= new Screen();
-		
-		Pattern fileNameInputTextbox = new Pattern(imageFilePath + "FilePath.PNG");
-		Pattern openButton = new Pattern(imageFilePath + "Open.PNG");
-		
-		Thread.sleep(3000);
-		s1.wait(fileNameInputTextbox,20);
-		s1.type(fileNameInputTextbox,inputFilePath +"Tulips.jpg");
-		s1.click(openButton);
-		
-		Thread.sleep(3000);
-		addImageInputControl.clickImageUploadButton();
-		
-		boolean upload=driver.getPageSource().contains("Uploads");
-		if(upload==true)
-		{
-			Assert.assertTrue(true);
-		}
-		else
-		{
-			captureScreen(driver,"TC_CVS_ImageInputControl_14");
-			Assert.assertTrue(false);
-		}
 	}
 
 }

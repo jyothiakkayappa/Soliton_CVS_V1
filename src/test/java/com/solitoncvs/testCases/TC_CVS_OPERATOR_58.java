@@ -6,19 +6,19 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
-import com.solitoncvs.pageObjects.AddImageInputControl;
+import com.solitoncvs.pageObjects.AddVideoInputControl;
 import com.solitoncvs.pageObjects.CreateNewBroadcast;
 import com.solitoncvs.pageObjects.Loginpage;
 import com.solitoncvs.pageObjects.SwitchEffects;
 
-public class TC_CVS_PreviewUploadedImageInput_15 extends BaseClass
+public class TC_CVS_OPERATOR_58 extends BaseClass
 {
 	@Test
-	public void previewUploadedImage() throws IOException, InterruptedException
+	public void switchAnyInputControl() throws InterruptedException, IOException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(3000);
-		Loginpage lp =new Loginpage(driver);
+		Loginpage lp = new Loginpage(driver);
 		lp.setEmail(email);
 		logger.info("Email Provided");
 		lp.setPassword(password);
@@ -49,7 +49,6 @@ public class TC_CVS_PreviewUploadedImageInput_15 extends BaseClass
 			logger.info("Testcase pass");
 			Thread.sleep(3000);
 		}
-		//System.out.println(driver.getTitle());
 		Set <String> s=driver.getWindowHandles(); //get the id of the available windows/browsers
 		logger.info("window switched");
 		for(String i:s)
@@ -59,12 +58,11 @@ public class TC_CVS_PreviewUploadedImageInput_15 extends BaseClass
 		}
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
-		AddImageInputControl addImageInputControl=new AddImageInputControl(driver);
-		addImageInputControl.clickImageInputControl();
-		addImageInputControl.previewUploadedImage();
+		AddVideoInputControl addVideoInputControl=new AddVideoInputControl(driver);
+		addVideoInputControl.clickVideoInputControl();
+		addVideoInputControl.previewUploadVideoInput();
 		SwitchEffects switchEffects=new SwitchEffects(driver);
 		switchEffects.switchBtn();
 	}
-	
 
 }

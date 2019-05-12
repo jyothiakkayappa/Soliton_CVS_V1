@@ -60,16 +60,17 @@ public class TC_CVS_OPERATOR_62 extends BaseClass
 			String t=driver.switchTo().window(i).getTitle();
 			System.out.println(t);
 		}
+		driver.manage().window().maximize();
 		Thread.sleep(3000);
-		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
-		
-		goLiveWInputCtl.addLivewithoutPlaybtn();
-		
-		Thread.sleep(3000);
-		AudioMixInputControl audioMixInputControl=new AudioMixInputControl(driver);
-		audioMixInputControl.clickAudioMixInput();
-		
-		audioMixInputControl.clickAudioMixPlayBtn();
+//		GoLiveWithoutAddingInputControl goLiveWInputCtl = new GoLiveWithoutAddingInputControl(driver);
+//		
+//		goLiveWInputCtl.addLivewithoutPlaybtn();
+//		
+//		Thread.sleep(3000);
+//		AudioMixInputControl audioMixInputControl=new AudioMixInputControl(driver);
+//		audioMixInputControl.clickAudioMixInput();
+//		
+//		audioMixInputControl.clickAudioMixPlayBtn();
 		
 		WebElement slider = driver.findElement(By.xpath("//input[@id='myRange']"));
         Actions move = new Actions(driver);
@@ -77,7 +78,7 @@ public class TC_CVS_OPERATOR_62 extends BaseClass
         action.perform();
         
         Thread.sleep(5000);
-		goLiveWInputCtl.endStream();
+		//goLiveWInputCtl.endStream();
 	}
 
 }
